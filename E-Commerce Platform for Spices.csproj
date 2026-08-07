@@ -67,7 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Style.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\Coriader.png" />
+    <Content Include="Images\Dhana-Dal.png" />
+    <Content Include="Images\Dhana-Kuria.png" />
+    <Content Include="Images\Fennel-Seeds.png" />
+    <Content Include="Images\homepage.png" />
+    <Content Include="Images\Methi-Kuria.png" />
+    <Content Include="Images\Rai-Kuria.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

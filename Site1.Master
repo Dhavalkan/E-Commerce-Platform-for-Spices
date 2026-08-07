@@ -41,13 +41,6 @@
             <span class="brand-text">FoodBridge</span>
         </a>
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
 
@@ -109,9 +102,7 @@
                     <a href="Login.aspx" class="btn-nav-outline" id="navLogin">
                         <i class="bi bi-box-arrow-in-right"></i> Login
                     </a>
-                    <a href="Register.aspx" class="btn-nav-filled" id="navRegister">
-                        <i class="bi bi-person-plus-fill"></i> Register
-                    </a>
+                    
                 <% } %>
             </div>
 
