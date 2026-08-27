@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link href="CSS/style.css?v=1.2" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 
@@ -130,13 +130,7 @@
                     Connecting generous food donors with verified NGOs across Gujarat.
                     Together we fight hunger and reduce food waste, one meal at a time.
                 </p>
-                <div class="footer-social">
-                    <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
-                </div>
+           
             </div>
 
             <!-- Quick Links -->
