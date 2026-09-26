@@ -1,221 +1,199 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site1.Master"
+﻿<%@ Page Title="Login"
+    Language="C#"
+    MasterPageFile="~/Site1.master"
     AutoEventWireup="true"
     CodeBehind="Login.aspx.cs"
     Inherits="E_Commerce_Platform_for_Spices.Login" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1"
+    ContentPlaceHolderID="head"
+    runat="server">
 
-    <style>
-        .login-page {
-            min-height: 85vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #faf9f8;
-            padding: 30px 15px;
-        }
+    <!-- Login CSS -->
+    <link href="CSS/Login.css" rel="stylesheet" />
 
-        .login-box {
-            width: 100%;
-            max-width: 360px;
-            padding: 20px;
-        }
-
-        .login-title {
-            text-align: center;
-            margin: 0;
-            font-size: 27px;
-            font-weight: 700;
-            color: #111;
-        }
-
-        .login-subtitle {
-            text-align: center;
-            margin: 6px 0 26px;
-            font-size: 11px;
-            color: #666;
-        }
-
-        .form-group {
-            margin-bottom: 13px;
-        }
-
-        .label-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-
-        .form-label {
-            font-size: 9px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .forgot-link {
-            font-size: 8px;
-            font-weight: 600;
-            color: #198754;
-            text-decoration: none;
-        }
-
-        .input-box {
-            position: relative;
-        }
-
-        .input-icon {
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #879187;
-            font-size: 13px;
-        }
-
-        .login-input {
-            width: 100%;
-            height: 40px;
-            padding: 0 10px 0 28px;
-            border: 1px solid #d8ddd9;
-            border-radius: 7px;
-            background: #fff;
-            outline: none;
-            font-size: 10px;
-        }
-
-        .login-input:focus {
-            border-color: #087b20;
-            box-shadow: 0 0 0 2px rgba(8,123,32,.08);
-        }
-
-        .login-button {
-            width: 100%;
-            height: 35px;
-            margin-top: 2px;
-            border: none;
-            border-radius: 6px;
-            background: #087b20;
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 3px 5px rgba(0,0,0,.18);
-        }
-
-        .login-button:hover {
-            background: #06691b;
-        }
-
-        .register-text {
-            text-align: center;
-            margin-top: 27px;
-            font-size: 9px;
-            color: #555;
-        }
-
-        .register-link {
-            color: #198754;
-            text-decoration: none;
-        }
-
-        .register-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 </asp:Content>
 
 
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content2"
+    ContentPlaceHolderID="MainContent"
+    runat="server">
 
-    <div class="login-page">
+    <!-- ================= LOGIN SECTION ================= -->
 
-        <div class="login-box">
+    <section class="login-section">
 
-            <h1 class="login-title">Welcome Back</h1>
+        <div class="login-container">
+
+            <!-- Heading -->
+
+            <h1 class="login-title">
+                Welcome Back
+            </h1>
 
             <p class="login-subtitle">
                 Enter your credentials to access your account.
             </p>
 
-            <!-- Email -->
-            <div class="form-group">
+            <!-- ================= LOGIN FORM ================= -->
 
-                <div class="label-row">
-                    <label class="form-label">Email Address</label>
-                </div>
+            <div class="login-form">
 
-                <div class="input-box">
 
-                    <span class="input-icon">✉</span>
+                <!-- ================= EMAIL ================= -->
 
-                    <asp:TextBox
-                        ID="txtEmail"
+                <div class="form-group">
+
+                    <label for="txtEmail">
+                        Email Address
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="bi bi-envelope"></i>
+
+                        <asp:TextBox
+                            ID="txtEmail"
+                            runat="server"
+                            CssClass="login-input"
+                            placeholder="Shree@example.com"
+                            TextMode="Email">
+                        </asp:TextBox>
+
+                    </div>
+
+
+                    <!-- Required Email -->
+
+                    <asp:RequiredFieldValidator
+                        ID="rfvEmail"
                         runat="server"
-                        CssClass="login-input"
-                        TextMode="Email"
-                        placeholder="Shree@example.com">
-                    </asp:TextBox>
+                        ControlToValidate="txtEmail"
+                        ValidationGroup="LoginGroup"
+                        ErrorMessage="Email address is required."
+                        Text="Email address is required."
+                        Display="Dynamic"
+                        CssClass="validation-error">
+                    </asp:RequiredFieldValidator>
 
-                </div>
 
-            </div>
+                    <!-- Email Format -->
 
-
-            <!-- Password -->
-            <div class="form-group">
-
-                <div class="label-row">
-
-                    <label class="form-label">Password</label>
-
-                    <asp:HyperLink
-                        ID="lnkForgotPassword"
+                    <asp:RegularExpressionValidator
+                        ID="revEmail"
                         runat="server"
-                        NavigateUrl="~/ForgotPassword.aspx"
-                        CssClass="forgot-link">
-                        Forgot Password?
-                    </asp:HyperLink>
+                        ControlToValidate="txtEmail"
+                        ValidationGroup="LoginGroup"
+                        ValidationExpression="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        ErrorMessage="Please enter a valid email address."
+                        Text="Please enter a valid email address."
+                        Display="Dynamic"
+                        CssClass="validation-error">
+                    </asp:RegularExpressionValidator>
 
                 </div>
 
-                <div class="input-box">
 
-                    <span class="input-icon">🔒</span>
+                <!-- ================= PASSWORD ================= -->
 
-                    <asp:TextBox
-                        ID="txtPassword"
+                <div class="form-group">
+
+                    <div class="password-label-row">
+
+                        <label for="txtPassword">
+                            Password
+                        </label>
+
+
+                        <a href="ForgotPassword.aspx"
+                            class="forgot-password">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="bi bi-lock"></i>
+
+                        <asp:TextBox
+                            ID="txtPassword"
+                            runat="server"
+                            CssClass="login-input"
+                            placeholder="••••••••"
+                            TextMode="Password">
+                        </asp:TextBox>
+
+                    </div>
+
+
+                    <!-- Required Password -->
+
+                    <asp:RequiredFieldValidator
+                        ID="rfvPassword"
                         runat="server"
-                        CssClass="login-input"
-                        TextMode="Password"
-                        placeholder="••••••••">
-                    </asp:TextBox>
+                        ControlToValidate="txtPassword"
+                        ValidationGroup="LoginGroup"
+                        ErrorMessage="Password is required."
+                        Text="Password is required."
+                        Display="Dynamic"
+                        CssClass="validation-error">
+                    </asp:RequiredFieldValidator>
+
+
+                    <!-- Password Format -->
+
+                    <asp:RegularExpressionValidator
+                        ID="revPassword"
+                        runat="server"
+                        ControlToValidate="txtPassword"
+                        ValidationGroup="LoginGroup"
+                        ValidationExpression="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
+                        ErrorMessage="Password must contain at least 8 characters and one number."
+                        Text="Password must contain at least 8 characters and one number."
+                        Display="Dynamic"
+                        CssClass="validation-error">
+                    </asp:RegularExpressionValidator>
 
                 </div>
 
-            </div>
 
+                <!-- ================= LOGIN BUTTON ================= -->
 
-            <!-- Login -->
-          
-
-            <!-- Register -->
-            <div class="register-text">
-
-                Don't have an account?
-
-                <asp:HyperLink
-                    ID="lnkRegister"
+                <asp:Button
+                    ID="btnLogin"
                     runat="server"
-                    NavigateUrl="~/Register.aspx"
-                    CssClass="register-link">
-                    Register Account
-                </asp:HyperLink>
+                    Text="LOGIN →"
+                    CssClass="login-button"
+                    ValidationGroup="LoginGroup"
+                    OnClick="btnLogin_Click" />
+
+
+                <!-- ================= REGISTER ================= -->
+
+                <p class="register-text">
+
+                    Don't have an account?
+
+                    <a href="Register.aspx">
+                        Register Account
+                    </a>
+
+                </p>
+
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
 </asp:Content>
