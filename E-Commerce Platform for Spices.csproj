@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Login.css" />
+    <Content Include="CSS\Register.css" />
     <Content Include="CSS\Style.css" />
     <Content Include="Home.aspx" />
     <Content Include="Images\Coriader.png" />
@@ -78,6 +79,7 @@
     <Content Include="Images\Methi-Kuria.png" />
     <Content Include="Images\Rai-Kuria.png" />
     <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +98,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
