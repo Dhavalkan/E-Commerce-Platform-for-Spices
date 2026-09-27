@@ -7,7 +7,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <link href="Content/Home.css" rel="stylesheet" />
+    <link href="CSS/Home.css" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
@@ -153,6 +153,14 @@
                     class="img-fluid product-small" />
 
             </div>
+            
+                <div class="view-products">
+
+                    <a href="#" class="view-button">
+                        View all our Products
+                    </a>
+
+                </div>
 
         </div>
 
