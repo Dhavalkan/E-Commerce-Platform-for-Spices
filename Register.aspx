@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Register"
     Language="C#"
-    MasterPageFile="~/Site1.master"
+    MasterPageFile="~/Login Register.master"
     AutoEventWireup="true"
     CodeBehind="Register.aspx.cs"
     Inherits="E_Commerce_Platform_for_Spices.Register" %>

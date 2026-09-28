@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Data.SqlClient;
 using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace E_Commerce_Platform_for_Spices
 {
@@ -23,7 +21,33 @@ namespace E_Commerce_Platform_for_Spices
                 string email = txtEmail.Text.Trim();
                 string password = txtPassword.Text.Trim();
 
-                // Database registration code will be added here.
+
+                // Database Connection
+                string connectionString =
+                    "Data Source=(localdb)\\ProjectModels;Initial Catalog=\"E-Commerce Platform For Spices\";Trusted_Connection=True;";
+
+                SqlConnection connection = new SqlConnection(connectionString);
+                string query = "INSERT INTO Users (FullName, Mobile, Email, Password) VALUES ('" + name + "', '" + mobile + "', '" + email + "', '" + password + "')";
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+                Response.Write("<script>alert('Registration Successful!');</script>");
+
+                txtName.Text = "";
+                txtMobile.Text = "";
+                txtEmail.Text = "";
+                txtPassword.Text = "";
+                txtConfirmPassword.Text = "";
+
+                //string connectionString = "Data Source=(localdb)\\ProjectModels;Initial Catalog=UserManagement;Trusted_Connection=True;";
+                //SqlConnection connection = new SqlConnection(connectionString);
+                //string query = "insert into insert (Name,Branch,Sem,City,Gender) Values ('" + Name.Text + "', '" + Branch.Text + "', '" + Sem.Text + "', '" + City.Text + "', '" + Gender.Text + "')";
+                //SqlCommand command = new SqlCommand(query, connection);
+                //connection.Open();
+                //command.ExecuteNonQuery();
+                //connection.Close();
+
             }
         }
     }
