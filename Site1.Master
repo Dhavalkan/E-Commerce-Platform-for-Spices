@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#059669" />
 
-    <title>FoodBridge – Connecting Donors with NGOs</title>
+    <title>Shree Ram Gruh Udhyog</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -37,8 +37,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="Default.aspx">
-            <img src="Images/logo.png" alt="FoodBridge Logo" class="brand-logo" />
-            <span class="brand-text">FoodBridge</span>
+            <img src="Images/logo.png" alt="Shree Ram Gruh Udhyog Logo" class="brand-logo" />
         </a>
 
         <!-- Links -->
@@ -54,25 +53,19 @@
 
                 <li class="nav-item">
                     <a class="nav-link" id="navAbout" href="About.aspx">
-                        <i class="bi bi-info-circle-fill"></i> About
+                        <i class="bi bi-info-circle-fill"></i> About Us
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" id="navDonate" href="Donate.aspx">
-                        <i class="bi bi-heart-fill"></i> Donate
+                        <i class="bi bi-shop-window"></i> Products
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" id="navNGOs" href="NGOs.aspx">
-                        <i class="bi bi-people-fill"></i> NGOs
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="navFAQ" href="FAQ.aspx">
-                        <i class="bi bi-question-circle-fill"></i> FAQ
+                        <i class="bi bi-images"></i> Gallery
                     </a>
                 </li>
 
@@ -123,12 +116,16 @@
             <!-- Brand Col -->
             <div class="col-lg-4 col-md-6">
                 <div class="footer-brand d-flex align-items-center gap-2">
-                    <img src="Images/logo.png" alt="FoodBridge" class="footer-logo" />
-                    <span class="footer-brand-name">FoodBridge</span>
+                    <img src="Images/loo.png" alt="Shree Ram Gruh Udhyog" class="footer-logo" />
+                    <span class="footer-brand-name">Shree Ram Gruh Udhyog</span>
                 </div>
                 <p class="footer-desc">
-                    Connecting generous food donors with verified NGOs across Gujarat.
-                    Together we fight hunger and reduce food waste, one meal at a time.
+                   A family food manufacturing unit
+in Gondal making papad,
+masala, pickles, namkeen and
+instant mixes since 1998 — the
+same recipes, made to modern
+food safety standards.
                 </p>
            
             </div>
@@ -139,9 +136,8 @@
                 <ul class="footer-links">
                     <li><a href="Default.aspx"><i class="bi bi-chevron-right"></i> Home</a></li>
                     <li><a href="About.aspx"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="Donate.aspx"><i class="bi bi-chevron-right"></i> Donate Food</a></li>
-                    <li><a href="NGOs.aspx"><i class="bi bi-chevron-right"></i> NGOs</a></li>
-                    <li><a href="FAQ.aspx"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+                    <li><a href="Donate.aspx"><i class="bi bi-chevron-right"></i> Products</a></li>
+                    <li><a href="NGOs.aspx"><i class="bi bi-chevron-right"></i> Gallery</a></li>
                     <li><a href="Contact.aspx"><i class="bi bi-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>

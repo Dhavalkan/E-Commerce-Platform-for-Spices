@@ -76,6 +76,7 @@
     <Content Include="CSS\Register.css" />
     <Content Include="CSS\Style.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\Logo.png" />
     <Content Include="Images\Coriader.png" />
     <Content Include="Images\Dhana-Dal.png" />
     <Content Include="Images\Dhana-Kuria.png" />
@@ -94,13 +95,6 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login Register.Master.cs">
-      <DependentUpon>Login Register.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login Register.Master.designer.cs">
-      <DependentUpon>Login Register.Master</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -126,7 +120,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Login Register.Master" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
