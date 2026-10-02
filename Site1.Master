@@ -36,7 +36,7 @@
     <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="Default.aspx">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="Home.aspx">
             <img src="Images/logo.png" alt="Shree Ram Gruh Udhyog Logo" class="brand-logo" />
         </a>
 
@@ -46,7 +46,7 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" id="navHome" href="Default.aspx">
+                    <a class="nav-link" id="navHome" href="Home.aspx">
                         <i class="bi bi-house-fill"></i> Home
                     </a>
                 </li>
@@ -144,7 +144,7 @@ food safety standards.
 
             <!-- For Donors -->
             <div class="col-lg-2 col-md-3 col-6">
-                <h5 class="footer-heading">Get Involved</h5>
+                <h5 class="footer-heading">Most selling product</h5>
                 <ul class="footer-links">
                     <li><a href="Register.aspx"><i class="bi bi-chevron-right"></i> Register</a></li>
                     <li><a href="Login.aspx"><i class="bi bi-chevron-right"></i> Login</a></li>
@@ -159,7 +159,7 @@ food safety standards.
                 <h5 class="footer-heading">Contact Us</h5>
                 <div class="footer-contact-item">
                     <i class="bi bi-geo-alt-fill"></i>
-                    <span>FoodBridge HQ, Satellite Road,<br />Ahmedabad, Gujarat – 380015</span>
+                    <span>Shree Ram Gruh Udhyog,<br />Rajkot-Gondal Main Highway,<br />  Biliyala, Gujarat – 360311</span>
                 </div>
                 <div class="footer-contact-item">
                     <i class="bi bi-telephone-fill"></i>
@@ -167,11 +167,7 @@ food safety standards.
                 </div>
                 <div class="footer-contact-item">
                     <i class="bi bi-envelope-fill"></i>
-                    <span>info@foodbridge.com</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="bi bi-clock-fill"></i>
-                    <span>Support: 7 AM – 10 PM daily</span>
+                    <span>ShreeRamGruhYodhyog@.gmail.com</span>
                 </div>
             </div>
 
@@ -181,7 +177,7 @@ food safety standards.
         <div class="footer-bottom">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <p>© 2026 <strong>FoodBridge</strong> | All Rights Reserved.</p>
+                    <p>© 2026 <strong>Shree Ram Gruh Udhyog</strong> | All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p>Made with <i class="bi bi-heart-fill text-danger"></i> in Gujarat, India</p>

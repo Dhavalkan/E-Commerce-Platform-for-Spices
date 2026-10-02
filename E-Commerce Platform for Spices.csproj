@@ -71,11 +71,15 @@
     <Content Include="App_Data\Project_log.ldf">
       <DependentUpon>Project.mdf</DependentUpon>
     </Content>
+    <Content Include="Contact.aspx" />
+    <Content Include="CSS\Contact.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Register.css" />
     <Content Include="CSS\Style.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\About Us.png" />
+    <Content Include="Images\Contect.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Coriader.png" />
     <Content Include="Images\Dhana-Dal.png" />
@@ -89,6 +93,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
