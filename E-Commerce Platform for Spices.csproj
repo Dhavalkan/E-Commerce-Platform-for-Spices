@@ -72,6 +72,15 @@
       <DependentUpon>Project.mdf</DependentUpon>
     </Content>
     <Content Include="Contact.aspx" />
+    <Content Include="AdminPortal\Dashboard.aspx" />
+    <Content Include="AdminPortal\Login.aspx" />
+    <Content Include="AdminPortal\Orders.aspx" />
+    <Content Include="AdminPortal\Products.aspx" />
+    <Content Include="AdminPortal\Users.aspx" />
+    <Content Include="AdminPortal\Content\admin.css" />
+    <Content Include="AdminPortal\Content\login.css" />
+    <Content Include="AdminPortal\Images\brand-mark.png" />
+    <Content Include="AdminPortal\Images\product-reference.png" />
     <Content Include="CSS\Contact.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
@@ -96,6 +105,13 @@
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
